@@ -1,1 +1,1 @@
-rootProject.name = "kmb-tr-data"
+rootProject.name = "kafka"

@@ -28,6 +28,26 @@ dependencies {
     runtimeOnly("com.mysql:mysql-connector-j")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    // https://mvnrepository.com/artifact/io.github.selevinia/selevinia-spring-boot-autoconfigure-tarantool
+    implementation("io.github.selevinia:selevinia-spring-boot-autoconfigure-tarantool:0.3.2")
+    // https://mvnrepository.com/artifact/org.tarantool/connector
+    implementation("org.tarantool:connector:1.9.4")
+    implementation("org.apache.kafka:kafka-clients:3.6.1")
+    // https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka
+    implementation("org.springframework.kafka:spring-kafka:3.1.2")
+    implementation("org.apache.kafka:kafka-streams")
+    // https://mvnrepository.com/artifact/io.github.selevinia/spring-data-tarantool
+    implementation("io.github.selevinia:spring-data-tarantool:0.3.2")
+    // https://mvnrepository.com/artifact/io.tarantool/spring-data-tarantool
+    implementation("io.tarantool:spring-data-tarantool:0.6.1")
+
+
+
+
+
+
+
+
 }
 
 tasks.withType<Test> {

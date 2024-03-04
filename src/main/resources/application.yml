@@ -1,1 +1,22 @@
+server:
+  port: 8092
+spring:
+  kafka:
+    bootstrap-servers: 192.168.100.58:9092
+
+
+
+  datasource:
+    url: jdbc:tarantool://localhost:3301
+    driver-class-name: org.tarantool.jdbc.SQLDriver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+app:
+  kafka:
+    kafkaMessageTopic: "message-topic"
+    kafkaMessageGroupId: "kafka-message-group-id"
+
 
